@@ -363,27 +363,3 @@ INSERT INTO Award (award_id, artist_id, awardName, Year) VALUES
 -- Awards for Bruno Mars (ArtistID: 10)
 (18, 10, 'Billboard Music Award - Top R&B Album (24K Magic)',  '2017'),
 (19, 10, 'Grammy Award - Album of the Year (24K Magic)', '2018');
-
-select * from playlistsongs;
-
-DELETE FROM Song
-WHERE song_id > 0; -- 6
-DELETE FROM Album
-WHERE album_id > 0; -- 7
-
-DELETE FROM Artist
-WHERE artist_id > 0; -- 8
-DELETE FROM Genre
-WHERE genre_id > 0; -- 5
-DELETE FROM Award
-WHERE award_id > 0; -- 4
-DELETE FROM Playlist
-WHERE playlist_id > 0; -- 3
-DELETE FROM User
-WHERE user_id > 0; -- 9
-DELETE FROM Subscription
-WHERE subscriptionID > 0; -- 10
-DELETE FROM PlaylistSongs
-WHERE playlist_id > 0 AND song_id > 0;-- 2
-DELETE FROM SongGenre
-WHERE song_id > 0 AND genre_id > 0;-- 1
